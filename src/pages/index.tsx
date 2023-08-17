@@ -10,7 +10,7 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
   return (
-    <div>
+    <RotaAutenticada>
       <Layout titulo="Dashboard">
         <Dashboard
           clientes={props.dashboard.clientes}
@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
           vendasPorMes={props.dashboard.vendasPorMes}
         />
       </Layout>
-    </div>
+    </RotaAutenticada>
   );
 };
 
