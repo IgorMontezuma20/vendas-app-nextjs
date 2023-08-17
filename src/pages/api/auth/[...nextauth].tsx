@@ -8,10 +8,10 @@ export default NextAuth({
       clientSecret: "531c8ca94fbde937bdd44c0691eca9567e38c4cf",
     }),
     Providers.Auth0({
-      clientId: "sQ6OnNSi0dTLDBSMHUUHedxrbWtxjzwk",
+      clientId: "c2YWbuWKVe2ON2W1RTulpdHZBbxqoFa5",
       clientSecret:
-        "Igk98BT8t-B7JDRwAffPF-rrIrsDIQgSoSymbEooE5R7w7DwrEOcK3YEHSZyCmZJ",
-      domain: "cursodsousa.us.auth0.com",
+        "xQD-IQBTKrq-b0n6R2wQQSLmqlpb3NrfmnlfxCaxBK2EIkVybUi5-OiKoxYvhrKd",
+      domain: "dev-rhzfcgdntvzo3nzx.us.auth0.com",
     }),
   ],
 });
