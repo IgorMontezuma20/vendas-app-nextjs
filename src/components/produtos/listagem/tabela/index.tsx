@@ -4,6 +4,7 @@ import { Column } from "primereact/column";
 import { Button } from "primereact/button";
 import { confirmDialog } from "primereact/confirmdialog";
 import { Cliente } from "app/models/clientes";
+import React, { Component, PropsWithChildren } from "react";
 
 import { AiFillEdit } from "react-icons/ai";
 import {
@@ -22,12 +23,10 @@ interface TabelaProdutosProps {
   onDelete: (produto: Produto) => void;
 }
 
-export const TabelaProdutos: React.FC<TabelaProdutosProps> = ({
-  produtos,
-  onEdit,
-  onDelete,
-}) => {
-  const actionTemplate = (registro: Cliente) => {
+export const TabelaProdutos: React.FC<
+  PropsWithChildren<TabelaProdutosProps>
+> = ({ produtos, onEdit, onDelete }) => {
+  const actionTemplate = (registro: Produto) => {
     const url = `/cadastros/produtos?id=${registro.id}`;
     return (
       <div className="field is-grouped">

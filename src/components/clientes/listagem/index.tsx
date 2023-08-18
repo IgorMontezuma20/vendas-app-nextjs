@@ -10,6 +10,7 @@ import { confirmDialog } from "primereact/confirmdialog";
 import { Page } from "app/models/common/page";
 import { useClienteService } from "app/services";
 import Router from "next/router";
+import React, { Component, PropsWithChildren } from "react";
 
 import { HiMiniTrash, HiPencil } from "react-icons/hi2";
 
@@ -19,9 +20,11 @@ import "primereact/resources/primereact.min.css";
 interface ConsultaClientesForm {
   nome?: string;
   cpf?: string;
+  
 }
 
-export const ListagemClientes: React.FC = () => {
+export const ListagemClientes: React.FC<ConsultaClientesForm> = () => {
+  
   const service = useClienteService();
   const [loading, setLoading] = useState<boolean>(false);
   const [clientes, setClientes] = useState<Page<Cliente>>({

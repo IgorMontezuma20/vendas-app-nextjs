@@ -27,7 +27,7 @@ import "primeflex/primeflex.css";
 
 interface VendasFormProps {
   onSubmit: (venda: Venda) => void;
-  onNewSale: () => void;
+  onNovaVenda: () => void;
   vendaRealizada: boolean;
 }
 
